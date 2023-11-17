@@ -12,8 +12,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <Box sx={{ backgroundColor: "#000" }}>
+        <Navbar />
         <Routes>
-          <Navbar />
           <Route exact path="/" element={<Feed />} />
           <Route path="/video/:id" element={<VideoDetail />} />
           <Route path="/channel/:id" element={<ChannelDetail />} />
